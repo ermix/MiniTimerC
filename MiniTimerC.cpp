@@ -15,7 +15,7 @@ MiniTimerC::MiniTimerC()
 }
 
 /// <summary>
-/// Start the timer, store current time 
+/// Start the timer
 /// </summary>
 void MiniTimerC::Start()
 {
@@ -23,9 +23,9 @@ void MiniTimerC::Start()
 }
 
 /// <summary>
-/// Return elapsed time from start time
+/// Return elapsed time from Start
 /// </summary>
-uint32_t MiniTimerC::Get()
+uint32_t MiniTimerC::TimeElapsed()
 {
 	return millis() - _t_start_ms - _t_set_ms;
 }
@@ -33,15 +33,15 @@ uint32_t MiniTimerC::Get()
 /// <summary>
 /// Set expire time 
 /// </summary>
-void MiniTimerC::SetExpire(uint32_t t_exp_ms)
+void MiniTimerC::ExpireIn(uint32_t t_exp_ms)
 {
 	_t_exp_ms = t_exp_ms;
 }
 
 /// <summary>
-/// Return if the expire time is elapsed
+/// Return if the time is expired
 /// </summary>
-boolean MiniTimerC::Expired()
+boolean MiniTimerC::IsExpired()
 {
 	return (millis() - _t_start_ms - _t_set_ms) >= _t_exp_ms;
 }

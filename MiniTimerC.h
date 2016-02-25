@@ -18,9 +18,9 @@ class MiniTimerC
 public:
 	MiniTimerC();
 	void Start();
-	uint32_t Get();
-	void SetExpire(uint32_t);
-	boolean Expired();
+	uint32_t TimeElapsed();
+	void ExpireIn(uint32_t);
+	boolean IsExpired();
 protected:
 private:
 	uint8_t _t_timers;
