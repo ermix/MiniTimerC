@@ -1,5 +1,5 @@
 /*
-MiniTimerC Example 1
+MiniTimerC Example 2 - Multiple timers
 Ermanno De Giuli
 edg@flx.it - 2016
 */
