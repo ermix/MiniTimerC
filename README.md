@@ -4,11 +4,10 @@ Arduino Simple Timer library
 Features
 --------
 
-* Get
-* Set 
 * Start
-* Stop
-* Expired
+* ExpireIn
+* IsExpired
+* TimeElapsed
 
 Works on
 --------
